@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
+      - run: npm install
       - run: npm run pretest
       - uses: TryGhost/action-deploy-theme@v1.4.1
         with:
